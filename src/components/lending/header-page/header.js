@@ -1,5 +1,5 @@
 import * as React from "react"
-import mylogo from "../../../images/header/nflogo.png";
+import mylogo from "../../../images/header/logo.svg";
 
 const Header = ({ siteTitle }) => {
 
