@@ -1,5 +1,5 @@
 import React from "react"
-/*import PropTypes from "prop-types"*/
+import PropTypes from "prop-types"
 /*import IMG from './images/loading.gif';*/
 
 export default function HTML(props) {
@@ -50,11 +50,11 @@ export default function HTML(props) {
   )
 }
 
-/*HTML.propTypes = {
+HTML.propTypes = {
   htmlAttributes: PropTypes.object,
   headComponents: PropTypes.array,
   bodyAttributes: PropTypes.object,
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
-}*/
+}
