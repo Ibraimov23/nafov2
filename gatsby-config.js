@@ -1,18 +1,10 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
 
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `NAFO`,
+    description: `The $NAFO token helps Ukrainian people and Ukrainian forces in their fight against the invaders. Buy $NAFO to become a fella and contribute to Ukraine's victory and well-being. Stop wasting your money on useless memecoins and make a real impact instead!`,
+    author: `@jonh`,
+    siteUrl: `https://nafov2-ibraimov-nursultan.vercel.app/`,
   },
   plugins: [
     `gatsby-transformer-remark`,
@@ -47,6 +39,6 @@ module.exports = {
           include: /icons/   
         }
       }
-    }
+    },
   ],
 }

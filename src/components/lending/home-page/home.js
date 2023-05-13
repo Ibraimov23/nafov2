@@ -4,16 +4,16 @@ import Icon from '../../icons/icon';
 export const Home = ({ siteTitle }) => {
 	return (
 		<div class="home-page" id="home">
-			<div class="home-page__container _container">
+			<div class="home-page__container _container" data-aos-duration="1000">
 				<div class="home-page__descriptions">
-					<h1 class="home-page__header header-text">$NAFO</h1>
-					<p class="home-page__description">
+					<h1 class="home-page__header header-text" data-aos="fade-up">$NAFO</h1>
+					<p class="home-page__description" data-aos="fade-up">
 						The $NAFO token helps Ukrainian people and Ukrainian forces in their fight against the invaders. Buy $NAFO to become a fella and contribute to Ukraine's victory and well-being. Stop wasting your money on useless memecoins and make a real impact instead!
 					</p>
-					<p class="home-page__info">$NAFO contract adress: <br />0xa39E0742901fC51245d786DC955E96C1D8d188a2</p>
+					<p class="home-page__info" data-aos="fade-up">$NAFO contract adress: <br />0xa39E0742901fC51245d786DC955E96C1D8d188a2</p>
 				</div>
 				<div class="home-page__soc-medias">
-					<ul class="soc-medias__links">
+					<ul class="soc-medias__links" data-aos="fade-up">
 						<li class="soc-medias__link">
 							<a href="#"><Icon name="tw" fould="home" width={34} height={34} /></a>
 						</li>

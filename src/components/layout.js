@@ -1,12 +1,7 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
- */
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import "@fontsource/inter";
 import "../theme/style.css";
 import Header from "./lending/header-page/header";
 import Footer from "./lending/footer-page/footer";
