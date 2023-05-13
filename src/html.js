@@ -34,8 +34,8 @@ export default function HTML(props) {
           <img
             src={IMG}
             alt="loading spinner"
-            width='550rem'
-            height='400rem'
+            width='500rem'
+            height='350rem'
           />
         </div>
         <div
