@@ -35,7 +35,7 @@ export default function HTML(props) {
             src={IMG}
             alt="loading spinner"
             width='500rem'
-            height='350rem'
+            height='300rem'
           />
         </div>
         <div
