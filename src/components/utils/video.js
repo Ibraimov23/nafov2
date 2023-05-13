@@ -4,7 +4,7 @@ export const Video = ({ videoSrcURL, videoTitle, ...props}) => (
         <iframe
             src={videoSrcURL}
             title={videoTitle}
-            loading="auto"
+            loading="lazy"
             {...props}
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
