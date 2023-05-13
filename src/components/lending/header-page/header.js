@@ -6,7 +6,7 @@ const Header = ({ siteTitle }) => {
 	return (
 		<header class="header">
 			<div class="header__container _container">
-				<a class="header__logo" href="#"><StaticImage src="../../../images/header/logo.png" alt="logo" placeholder="blurred" className="logo__image"/></a>
+				<a class="header__logo" href="#"><StaticImage src="../../../images/header/logo.svg" alt="logo" placeholder="blurred" className="logo__image"/></a>
 				<nav class="header__menu">
 					<ul class="menu__items">
 						<li class="menu__item"><a href="#home" class="menu__link">HOME</a></li>

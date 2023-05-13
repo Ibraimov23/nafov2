@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import IMG from './images/loading.gif';
+/*import IMG from './images/loading.gif';*/
 
 export default function HTML(props) {
   return (
@@ -14,12 +14,12 @@ export default function HTML(props) {
         />
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes} style={{backgroundColor: '#000', overflow: "hidden"}} id="___bd">
+      <body {...props.bodyAttributes} /*style={{backgroundColor: '#000', overflow: "hidden"}}*/ id="___bd">
         {props.preBodyComponents}
         <div
           key={`loader`}
           id="___loader"
-          style={{
+          /*style={{
             alignItems: "center",
             display: "flex",
             justifyContent: "center",
@@ -29,20 +29,20 @@ export default function HTML(props) {
             right: 0,
             bottom: 0,
             zIndex: 100
-          }}
+          }}*/
         >
-          <img
+          {/*<img
             src={IMG}
             alt="loading spinner"
             width='500rem'
             height='300rem'
-          />
+        />*/}
         </div>
         <div
           key={`body`}
           id="___gatsby"
           dangerouslySetInnerHTML={{ __html: props.body }}
-          style={{display: "none"}}
+          /*style={{display: "none"}}*/
         />
         {props.postBodyComponents}
       </body>

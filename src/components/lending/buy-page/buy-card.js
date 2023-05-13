@@ -10,9 +10,9 @@ const Card = (props) => {
         <div class="buy-page__card" data-aos="fade-up">
             <div class="card__row">
                 <div class="row__img">
-                    {props.alt == wallet.alt ? <StaticImage {...wallet} placeholder="blurred"  /> 
-                    : props.alt == eth.alt ? <StaticImage {...eth} placeholder="blurred" />
-                    : props.alt == uniswap.alt ? <StaticImage {...uniswap} placeholder="blurred" />
+                    {props.alt === wallet.alt ? <StaticImage {...wallet} placeholder="blurred"  /> 
+                    : props.alt === eth.alt ? <StaticImage {...eth} placeholder="blurred" />
+                    : props.alt === uniswap.alt ? <StaticImage {...uniswap} placeholder="blurred" />
                     : <StaticImage {...swap} placeholder="blurred" />
                     }
                 </div>

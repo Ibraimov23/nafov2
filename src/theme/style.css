@@ -26,6 +26,7 @@
     max-width: 884px;
     margin: 0px auto;
   }
+  ._line {text-decoration: underline;}
   /*header----------------------------------------*/
   .header {
     background: #1D1D1D;

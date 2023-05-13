@@ -8,14 +8,13 @@ export const Buy = ({ siteTitle }) => {
 			<div class="buy-page__container _container" data-aos-duration="1000">
 				<h1 class="buy-page__header header-text" data-aos="fade-up">HOW TO BUY</h1>
 				<div class="buy-page__cards">
-					<Card header="Create a Wallet" desc="You can obtain Metamask or any other wallet you prefer for free from either the app store or Google Play Store.
-					    If you are using a desktop, simply visit Metamask.io and download the Google Chrome extension." alt="wallet" />
-					<Card header="Get Some ETH" desc="Have ETH in your wallet to switch to $NAFO. If you don’t have any ETH, you can buy directly on Metamask, transfer from another wallet, or buy on another exchange and send it to your wallet." alt="eth" />
-					<Card header="Go to Uniswap" desc="To connect to Uniswap, visit app.uniswap.org using either the browser in your Metamask app or Google Chrome. Connect your wallet and navigate to Uniswap. Afterward, input the $NAFO token address, select NAFO, and confirm. When prompted by Metamask for a wallet signature, provide your signature to complete the process." alt="uniswap" />
-					<Card header="Swap ETH for NAFO" desc="*When selling $NAFO, please be aware that there is a 4% tax, which goes to our donation fund. Therefore, it's recommended that you consider this tax when making purchases. However, during periods of market instability, it may be necessary to use slippage." alt="swap" />
+					<Card header="Create a Wallet" desc="If you are using a desktop, we suggest visiting Metamask.io and downloading their browser extension. For mobile, install any Ethereum wallet that can be connected to Uniswap." alt="wallet" />
+					<Card header="Get Some ETH" desc="You will need ETH to pay for transaction fees when buying $NAFO. You can buy some ETH directly in Metamask or just get it transferred to your wallet from an exchange or your fellas." alt="eth" />
+					<Card header="Go to Uniswap" desc="Open the Uniswap app, connect your wallet, and paste the $NAFO smart contract address. Or simply visit this link for a pre-configured setup with $NAFO as received currency." alt="uniswap" />
+					<Card header="Become a fella" desc="Time to join $NAFO! Set the slippage to at least 4-5%, enter how much $NAFO you want to buy, and press Swap. Pay the gas fee and wait for your transaction to be confirmed. Congratulations, you’re a fella now!" alt="swap" />
 				</div>
 				<div class="buy-page__screen" data-aos="fade-up">
-					<Video videoSrcURL="https://app.uniswap.org/#/swap?outputCurrency=0x6982508145454ce325ddbe47a25d4ec3d2311933" videoTitle="uniswap" width="100%" height="428" />
+					<Video videoSrcURL="https://app.uniswap.org/#/swap?outputCurrency=0xaf59f6613920d98ef64a133b21b28495a63e808f" videoTitle="uniswap" width="100%" height="428" />
 				</div>
 			</div>
 		</div>
