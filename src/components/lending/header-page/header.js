@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => {
 						<li class="menu__item"><a href="#faq" class="menu__link">FAQ</a></li>
 					</ul>
 				</nav>
-				<a class="header__button" href="https://app.uniswap.org/#/swap?outputCurrency=0x6982508145454ce325ddbe47a25d4ec3d2311933"><p class="button__text">buy now</p></a>
+				<a class="header__button" href="https://app.uniswap.org/#/swap?outputCurrency=0xaf59f6613920d98ef64a133b21b28495a63e808f"><p class="button__text">buy now</p></a>
 			</div>
 		</header>
 	)
