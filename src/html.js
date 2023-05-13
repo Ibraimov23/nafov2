@@ -14,7 +14,7 @@ export default function HTML(props) {
         />
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes}>
+      <body {...props.bodyAttributes} style={{backgroundColor: '#0e0e0e', overflow: "hidden"}} id="___bd">
         {props.preBodyComponents}
         <div
           key={`loader`}
@@ -23,7 +23,6 @@ export default function HTML(props) {
             alignItems: "center",
             display: "flex",
             justifyContent: "center",
-            backgroundColor: '#fff',
             position: "absolute",
             left: 0,
             top: 0,
@@ -35,14 +34,15 @@ export default function HTML(props) {
           <img
             src={IMG}
             alt="loading spinner"
-            width="150"
-            height="150"
+            width='500rem'
+            height='400rem'
           />
         </div>
         <div
           key={`body`}
           id="___gatsby"
           dangerouslySetInnerHTML={{ __html: props.body }}
+          style={{display: "none"}}
         />
         {props.postBodyComponents}
       </body>
