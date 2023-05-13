@@ -14,7 +14,7 @@ export default function HTML(props) {
         />
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes} style={{backgroundColor: '#0e0e0e', overflow: "hidden"}} id="___bd">
+      <body {...props.bodyAttributes} style={{backgroundColor: '#000', overflow: "hidden"}} id="___bd">
         {props.preBodyComponents}
         <div
           key={`loader`}
