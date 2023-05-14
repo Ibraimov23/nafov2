@@ -549,7 +549,7 @@ body {
   /*tokenomic-page--------------*/
   .tokenomic-page {
     padding-top: 130px;
-    height: 57rem;
+    height: 55rem;
   }
 
   .tokenomic-page__container::before {
@@ -568,7 +568,7 @@ body {
 
   /*faq-page*/
   .faq-page__container {
-    padding-top: 80px;
+    padding-top: 110px;
   }
 
   .faq-page__description_text2 {
@@ -635,7 +635,7 @@ body {
 
   /*tokenomic-page--------------------------*/
   .tokenomic-page {
-    height: 38rem;
+    height: 36rem;
   }
 
   .tokenomic-page__limit {
