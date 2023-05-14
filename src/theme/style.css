@@ -568,7 +568,7 @@ body {
 
   /*faq-page*/
   .faq-page__container {
-    padding-top: 110px;
+    padding-top: 80px;
   }
 
   .faq-page__description_text2 {
@@ -635,7 +635,7 @@ body {
 
   /*tokenomic-page--------------------------*/
   .tokenomic-page {
-    height: 36rem;
+    height: 162vw;
   }
 
   .tokenomic-page__limit {
