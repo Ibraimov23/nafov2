@@ -29,6 +29,7 @@ export const Contact = ({ siteTitle }) => {
 			</div>
 			<div class="contact-page__border"></div>
 			<div class="contact-page__descriptions _container">
+			    <p class="contact-page__descriptions_text0">Disclamer</p>
 				<p class="contact-page__descriptions_text">The $NAFO token has no affiliation with the Serhiy Prytula Charity Foundation, the NAFO meme or its creator, Kamil Dyszewski. The project does not constitute financial advice. The $NAFO team takes no responsibility for the token price action or security breaches that may occur during the use of the $NAFO token. Please be reminded that cryptocurrency trading is a high-risk activity and invest only the amount of money you are prepared to lose.</p>
 			</div>
 		</div>

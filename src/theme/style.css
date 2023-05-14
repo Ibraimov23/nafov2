@@ -63,7 +63,7 @@ body {
 .header {
   background: #1D1D1D;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin: -1px;
+  margin-bottom: -1px;
 }
 
 .header__container {
@@ -169,7 +169,7 @@ body {
 .about-page {
   background: #1D1D1D;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin: -1px;
+  margin-bottom: -1px;
 }
 
 .about-page__container {
@@ -201,7 +201,7 @@ body {
 .buy-page {
   background: #1D1D1D;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin: -1px;
+  margin-bottom: -1px;
 }
 
 .buy-page__container {
@@ -276,6 +276,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
+  left: 0px;
   height: 80rem;
   width: 100%;
   z-index: 1;
@@ -285,6 +286,7 @@ body {
   position: relative;
   font-size: 48px;
   line-height: 58px;
+  color: #208CCB;
   text-align: right;
   padding-top: 37px;
   z-index: 1;
@@ -320,11 +322,15 @@ body {
 .faq-page {
   background: #1D1D1D;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin: -1px;
+  margin-bottom: -1px;
 }
 
 .faq-page__container {
   padding-top: 150px;
+}
+
+.faq-page__header {
+  color: #B0936C;
 }
 
 .faq-page__descriptions {
@@ -342,7 +348,8 @@ body {
 }
 
 .faq-page__description_text1 {
-  font-weight: 700;
+  font-weight: 800;
+  color: #B0936C;
 }
 
 .faq-page__description_text2 {
@@ -354,7 +361,7 @@ body {
 .contact-page {
   background: #1D1D1D;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin: -1px;
+  margin-bottom: -1px;
   padding-bottom: 80px;
 }
 
@@ -386,11 +393,19 @@ body {
   margin-top: 80px;
 }
 
+.contact-page__descriptions_text0 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+
 .contact-page__descriptions_text {
   font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 12px;
+  line-height: 15px;
   text-align: center;
+  padding-top: 13px;
 }
 
 .contact-page__descriptions .position {
@@ -423,11 +438,11 @@ body {
   }
 }
 
-@media only screen and (max-width: 1100px) {
+/*@media only screen and (max-width: 1100px) {
   .tokenomic-page__container::before {
     left: 0px;
   }
-}
+}*/
 
 @media only screen and (max-width: 900px) {
   ._container {
