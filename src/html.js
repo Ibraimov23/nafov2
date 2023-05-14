@@ -40,7 +40,7 @@ export default function HTML(props) {
         </div>
         <div
           key={`body`}
-          id="___gatsby"
+          id="___main"
           dangerouslySetInnerHTML={{ __html: props.body }}
           /*style={{display: "none"}}*/
         />
