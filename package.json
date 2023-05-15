@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "add": "^2.0.6",
     "aos": "^3.0.0-beta.6",
     "gatsby": "^5.8.0",
     "gatsby-plugin-image": "^3.9.0",
@@ -17,8 +18,12 @@
     "gatsby-transformer-sharp": "^5.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.4.3",
     "react-reveal": "^1.2.2",
-    "source-map": "0.8.0-beta.0"
+    "react-scroll-trigger": "^0.6.14",
+    "react-typist": "^2.0.5",
+    "source-map": "0.8.0-beta.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "prettier": "^2.8.4"

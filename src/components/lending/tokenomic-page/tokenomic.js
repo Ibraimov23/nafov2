@@ -5,7 +5,7 @@ export const Tokenomic = ({ siteTitle }) => {
 	return (
 		<div class="tokenomic-page" id="tokenomic">
 			<div class="tokenomic-page__limit"></div>
-			<div class="tokenomic-page__container _container" data-aos-duration="1000">
+			<div class="tokenomic-page__container _container">
 				<h1 class="tokenomic-page__header header-text" data-aos="fade-up">TOKENOMICS</h1>
 				<div class="tokenomic-page__descriptions">
 					<h5 class="tokenomic-page__descriptions_head" data-aos="fade-up">Token supply - 199 124 800 000 000</h5>
