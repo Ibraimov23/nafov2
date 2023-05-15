@@ -232,9 +232,10 @@ body {
 }
 
 .buy-page__card .row__description_header {
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 800;
+  font-size: 15px;
   line-height: 160%;
+  color: #FCBB41;
 }
 
 .buy-page__card .card__row .row__description {
