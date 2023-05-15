@@ -8,11 +8,9 @@ export const About = ({ siteTitle }) => {
 		<div class="about-page" id="about">
 			<div class="about-page__container _container">
 				<div class="about-page__row">
-					<Slide left duration={2000}>
 						<div class="row__image">
-							<StaticImage src="../../../images/about/fella.svg" alt="fella" height={500} width={402} layout="fixed" placeholder="blurred" className="row__image_img" />
+						    <Slide left duration={2000}><StaticImage src="../../../images/about/fella.svg" alt="fella" height={500} width={402} layout="fixed" placeholder="blurred" className="row__image_img" /></Slide>
 						</div>
-					</Slide>
 					<div class="row__descriptions">
 						<h1 class="about-page__header header-text" data-aos="fade-up">OUR VALUES</h1>
 						<div class="about-page__description">
