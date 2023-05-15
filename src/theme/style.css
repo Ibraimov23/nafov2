@@ -263,63 +263,55 @@ body {
 
 /*tokenomics------------------------------*/
 .tokenomic-page {
-  position: relative;
-  padding-top: 150px;
   background: #1D1D1D;
-  height: 90rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: -1px;
+  padding-top: 160px;
 }
 
-.tokenomic-page__limit {
+.tokenomic-page__line {
   border-top: 1px solid #575757;
 }
 
-.tokenomic-page__container::before {
-  content: '';
-  background-image: url(../images/tokenomic/info.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  left: 0px;
-  height: 80rem;
-  width: 100%;
-  z-index: 1;
-}
-
 .tokenomic-page__header {
-  position: relative;
+  position: absolute;
+  font-weight: 700;
   font-size: 48px;
   line-height: 58px;
   color: #208CCB;
-  text-align: right;
-  padding-top: 37px;
-  z-index: 1;
+  top: 4rem;
 }
 
-.tokenomic-page__descriptions {
+.tokenomic-page__row {
   position: relative;
-  padding-top: 32px;
-  text-align: right;
-  z-index: 1;
+  display: flex;
+  align-items: end;
+  gap: 38px;
 }
 
-.tokenomic-page__descriptions_head {
+.tokenomic-page__row .row__description {
+  max-width: 50%;
+  margin-bottom: 20px;
+}
+
+.tokenomic-page__row .row__description_head {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  top: 0px;
 }
 
-.tokenomic-page__descriptions .descriptions__texts {
-  width: 50%;
-  margin-left: auto;
+.tokenomic-page__row .row__descriptions {
+  padding-top: 25px;
 }
 
-.tokenomic-page__descriptions .descriptions__texts .descriptions__texts_text {
+.tokenomic-page__row .row__descriptions_text {
   font-weight: 500;
   font-size: 16px;
   line-height: 131.52%;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-  padding-top: 25px;
+  padding-top: 15px;
 }
+
 
 /*faq-page--------------------------------*/
 .faq-page {
@@ -329,7 +321,7 @@ body {
 }
 
 .faq-page__container {
-  padding-top: 150px;
+  padding-top: 230px;
 }
 
 .faq-page__header {
@@ -394,6 +386,10 @@ body {
   border-top: 1px solid #575757;
   padding-bottom: 70px;
   margin-top: 80px;
+}
+
+.contact-page__descriptions {
+  text-align: center;
 }
 
 .contact-page__descriptions_text0 {
@@ -563,28 +559,48 @@ body {
   .buy-page__card .row__description_desc {
     font-size: 13px;
   }
-  
+
   .buy-page__screen {
     padding-top: 40px;
   }
+
   /*tokenomic-page--------------*/
+
   .tokenomic-page {
-    padding-top: 130px;
-    height: 55rem;
+    padding-top: 80px;
   }
 
-  .tokenomic-page__container::before {
-    filter: blur(0px) brightness(50%) contrast(150%) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) saturate(2);
+  .tokenomic-page__row {
+    flex-direction: column;
   }
 
-  .tokenomic-page__descriptions .descriptions__texts {
-    width: 100%;
+  .tokenomic-page__header {
+    right: 1px;
+  }
+
+  .tokenomic-page__row .row__description {
+    max-width: 100%;
+  }
+
+  .tokenomic-page__row .row__description_head {
+    position: unset;
+  }
+
+  .tokenomic-page__row .row__descriptions {
     padding-top: 10px;
   }
 
-  .tokenomic-page__descriptions .descriptions__texts .descriptions__texts_text {
-    font-size: 15px;
-    padding-top: 15px;
+  .tokenomic-page__row .row__descriptions_text {
+    font-size: 14px;
+  }
+
+  .tokenomic-page__row .row__image {
+    margin: auto;
+  }
+
+  .tokenomic-page__row .row__image img {
+    height: 100%;
+    width: 100%;
   }
 
   /*faq-page*/
@@ -655,16 +671,13 @@ body {
   }
 
   /*tokenomic-page--------------------------*/
-  .tokenomic-page {
-    height: 162vw;
-  }
-
-  .tokenomic-page__limit {
-    display: none;
-  }
-
   .tokenomic-page__header {
-    padding-top: 0px;
+    left: 1rem;
+    top: 2rem;
+  }
+  
+  .tokenomic-page__row {
+    padding-top: 6rem;
   }
 
   /*contact-page-----------------------------*/
