@@ -112,7 +112,7 @@ body {
 .__main {
   position: relative;
   z-index: 1;
-  border-bottom: 1px solid #575757;
+  border-bottom: 3px solid #575757;
 }
 
 /*home-page------------------------------*/

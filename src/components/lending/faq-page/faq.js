@@ -3,19 +3,13 @@ import { useInView } from "react-intersection-observer";
 import Card from "./faq-card"
 
 export const Faq = ({ siteTitle }) => {
-	const [isVisible, setIsVisible] = useState(false);
 	const { ref, inView } = useInView({ threshold: 0 });
     const [isTypingComplete, setIsTypingComplete] = useState(false);
 
 	const handleTypingDone = () => {
 		setIsTypingComplete(true);
 	};
-	const startTyping = () => {
-		setIsVisible(true);
-	};
-    useEffect(() => {
-		if (isTypingComplete) {}
-	}, [isTypingComplete]);
+    
     return (
         <div class="faq-page" id="faq">
 			<div class="faq-page__container _container" ref={ref}>

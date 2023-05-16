@@ -5,20 +5,13 @@ import { useInView } from "react-intersection-observer";
 import Icon from '../../icons/icon';
 import { Video } from "../../utils";
 
-export const Buy = ({ siteTitle,isMobile }) => {
-	const [isVisible, setIsVisible] = useState(false);
+export const Buy = ({ siteTitle, isMobile }) => {
 	const { ref, inView } = useInView({ threshold: 0 });
 	const [isTypingComplete, setIsTypingComplete] = useState(false);
 
 	const handleTypingDone = () => {
 		setIsTypingComplete(true);
 	};
-	const startTyping = () => {
-		setIsVisible(true);
-	};
-	useEffect(() => {
-		if (isTypingComplete) {}
-	}, [isTypingComplete]);
 
 	return (
 		<div class="buy-page" id="buy">

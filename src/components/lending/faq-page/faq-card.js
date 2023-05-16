@@ -3,8 +3,6 @@ import { Fade } from "react-reveal";
 import Typist from 'react-typist';
 
 const Card = (props) => {
-
-
     return (
         <div class="faq-page__description">
             <p class="faq-page__description_text faq-page__description_text1"><Fade duration={2000}>{props.question}</Fade></p>
