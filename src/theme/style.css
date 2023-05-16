@@ -472,9 +472,9 @@ body {
     min-height: 70px;
   }
 
-  /*.header__menu {
+  .header__menu {
     display: none;
-  }*/
+  }
 
   .menu__item,
   .button__text {

@@ -2,21 +2,8 @@ import React, { useEffect, useState } from 'react';
 import mylogo from "../../../images/header/logo.svg";
 import { Slide } from "react-reveal"
 
-const Header = ({ siteTitle }) => {
-	const [isMobile, setIsMobile] = useState(false);
-
-	useEffect(() => {
-		const handleResize = () => {
-			setIsMobile(window.innerWidth < 820);
-		};
-
-		window.addEventListener('resize', handleResize);
-		handleResize();
-
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
+const Header = ({ siteTitle, isMobile}) => {
+	
 	return (
 		<header class="header">
 			<div class="_container">

@@ -1,18 +1,32 @@
-import * as React from "react"
+import React, { useEffect, useState } from 'react';
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { Home, About, Buy,Tokenomic, Faq, Contact } from '../components/lending';
 
 const IndexPage = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		const handleResize = () => {
+			setIsMobile(window.innerWidth < 820);
+		};
+
+		window.addEventListener('resize', handleResize);
+		handleResize();
+
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
   return (
-    <Layout>
-       <Home />
-       <About />
-       <Buy />
-       <Tokenomic />
+    <Layout isMobile={isMobile}>
+       <Home isMobile={isMobile} />
+       <About isMobile={isMobile} />
+       <Buy isMobile={isMobile} />
+       <Tokenomic isMobile={isMobile} />
        <Faq />
-       <Contact />
+       <Contact isMobile={isMobile} />
     </Layout>
   )
 }

@@ -1,23 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import * as React from "react"
 import Icon from '../../icons/icon';
 import { StaticImage } from "gatsby-plugin-image";
 import { Slide, Fade } from "react-reveal";
 
-export const Contact = ({ siteTitle }) => {
-	const [isMobile, setIsMobile] = useState(false);
-
-	useEffect(() => {
-		const handleResize = () => {
-			setIsMobile(window.innerWidth < 820);
-		};
-
-		window.addEventListener('resize', handleResize);
-		handleResize();
-
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
+export const Contact = ({ siteTitle, isMobile }) => {
 	return (
 		<div class="contact-page">
 			<div class="contact-page__container _container">

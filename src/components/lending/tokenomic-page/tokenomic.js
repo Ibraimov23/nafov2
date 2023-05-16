@@ -1,22 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Slide } from "react-reveal"
 
-export const Tokenomic = ({ siteTitle }) => {
-	const [isMobile, setIsMobile] = useState(false);
-
-	useEffect(() => {
-		const handleResize = () => {
-			setIsMobile(window.innerWidth < 820);
-		};
-
-		window.addEventListener('resize', handleResize);
-		handleResize();
-
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
+export const Tokenomic = ({ siteTitle, isMobile }) => {
 	return (
 		<div class="tokenomic-page">
 			<div class="tokenomic-page__line"></div>

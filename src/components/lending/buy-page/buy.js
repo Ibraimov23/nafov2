@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 import Icon from '../../icons/icon';
 import { Video } from "../../utils";
 
-export const Buy = ({ siteTitle }) => {
+export const Buy = ({ siteTitle,isMobile }) => {
 	const [isVisible, setIsVisible] = useState(false);
 	const { ref, inView } = useInView({ threshold: 0 });
 	const [isTypingComplete, setIsTypingComplete] = useState(false);
@@ -19,20 +19,7 @@ export const Buy = ({ siteTitle }) => {
 	useEffect(() => {
 		if (isTypingComplete) {}
 	}, [isTypingComplete]);
-	const [isMobile, setIsMobile] = useState(false);
 
-	useEffect(() => {
-		const handleResize = () => {
-			setIsMobile(window.innerWidth < 820);
-		};
-
-		window.addEventListener('resize', handleResize);
-		handleResize();
-
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
 	return (
 		<div class="buy-page" id="buy">
 			<div class="buy-page__container _container" ref={ref}>

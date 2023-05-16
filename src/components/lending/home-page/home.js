@@ -1,22 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import * as React from "react"
 import Icon from '../../icons/icon';
 import { Slide, Fade } from "react-reveal"
 
-export const Home = ({ siteTitle }) => {
-	const [isMobile, setIsMobile] = useState(false);
-
-	useEffect(() => {
-		const handleResize = () => {
-			setIsMobile(window.innerWidth < 820);
-		};
-
-		window.addEventListener('resize', handleResize);
-		handleResize();
-
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
+export const Home = ({ siteTitle,isMobile }) => {
 	return (
 		<div class="home-page" id="home">
 			<div class="home-page__container _container">

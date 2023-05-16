@@ -1,22 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Slide } from "react-reveal"
 
-export const About = ({ siteTitle }) => {
-	const [isMobile, setIsMobile] = useState(false);
-
-	useEffect(() => {
-		const handleResize = () => {
-			setIsMobile(window.innerWidth < 820);
-		};
-
-		window.addEventListener('resize', handleResize);
-		handleResize();
-
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
+export const About = ({ siteTitle, isMobile }) => {
 	return (
 		<div class="about-page" id="about">
 			<div class="about-page__container _container">
