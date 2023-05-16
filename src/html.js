@@ -1,5 +1,5 @@
 import React from "react"
-/*import PropTypes from "prop-types"*/
+import PropTypes from "prop-types"
 /*import IMG from './images/loading.gif';*/
 
 export default function HTML(props) {
@@ -14,7 +14,7 @@ export default function HTML(props) {
         />
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes} /*style={{backgroundColor: '#000', overflow: "hidden"}}*/ id="___bd">
+      <body {...props.bodyAttributes} style={{backgroundColor: '#1D1D1D'}} /*style={{backgroundColor: '#000', overflow: "hidden"}}*/ id="___bd">
         {props.preBodyComponents}
         <div
           key={`loader`}
@@ -42,7 +42,7 @@ export default function HTML(props) {
           key={`body`}
           id="___gatsby"
           dangerouslySetInnerHTML={{ __html: props.body }}
-          /*style={{display: "none"}}*/
+          style={{display: "none"}}
         />
         {props.postBodyComponents}
       </body>
@@ -50,11 +50,11 @@ export default function HTML(props) {
   )
 }
 
-/*HTML.propTypes = {
+HTML.propTypes = {
   htmlAttributes: PropTypes.object,
   headComponents: PropTypes.array,
   bodyAttributes: PropTypes.object,
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
-}*/
+}
