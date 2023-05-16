@@ -41,7 +41,6 @@ body {
   line-height: 1;
   font-size: 16px;
   color: #FFFFFF;
-  ;
   scroll-behavior: smooth;
 }
 
@@ -61,11 +60,9 @@ body {
 
 /*header----------------------------------------*/
 .header {
-  position: relative;
   background: #1D1D1D;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: -1px;
-  z-index: -1;
 }
 
 .header__container {
@@ -109,6 +106,13 @@ body {
 .header-text {
   font-weight: 700;
   font-size: 64px;
+}
+
+/*main-----------------------------------*/
+.__main {
+  position: relative;
+  z-index: 1;
+  border-bottom: 1px solid #575757;
 }
 
 /*home-page------------------------------*/
@@ -415,7 +419,6 @@ body {
 .footer {
   background: #1D1D1D;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-top: 1px solid #575757;
 }
 
 .footer__header {
@@ -469,9 +472,9 @@ body {
     min-height: 70px;
   }
 
-  .header__menu {
+  /*.header__menu {
     display: none;
-  }
+  }*/
 
   .menu__item,
   .button__text {
@@ -675,7 +678,7 @@ body {
     left: 1rem;
     top: 2rem;
   }
-  
+
   .tokenomic-page__row {
     padding-top: 6rem;
   }
