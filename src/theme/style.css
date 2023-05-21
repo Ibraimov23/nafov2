@@ -470,7 +470,7 @@ body {
   ._container {
     max-width: 500px;
   }
-  #off .react-reveal {
+  .react-reveal {
     animation-name: unset !important;
   }
 
