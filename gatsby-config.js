@@ -4,7 +4,7 @@ module.exports = {
     title: `NAFO`,
     description: `The $NAFO token helps Ukrainian people and Ukrainian forces in their fight against the invaders. Buy $NAFO to become a fella and contribute to Ukraine's victory and well-being. Stop wasting your money on useless memecoins and make a real impact instead!`,
     author: `@jonh`,
-    siteUrl: `https://nafov2-ibraimov-nursultan.vercel.app/`,
+    siteUrl: `https://nafo.vip`,
   },
   plugins: [
     `gatsby-transformer-remark`,
@@ -12,8 +12,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
         options: {
-          name: `icons`,
-          path: `${__dirname}/src/images/buy/icons`,
+          name: `images`,
+          path: `${__dirname}/src/images`,
         }
     },
     `gatsby-transformer-sharp`,

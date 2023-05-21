@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import { Slide, Fade } from "react-reveal";
 import { useInView } from "react-intersection-observer";
 import Typist from 'react-typist';
-import Icon from '../../icons/icon';
 import { Video } from "../../utils";
-import { StaticImage } from "gatsby-plugin-image";
 import { useStaticQuery, graphql } from "gatsby"
 import { LazyLoadImage } from "react-lazy-load-image-component"
-import "react-lazy-load-image-component/src/effects/blur.css"
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export const Buy = ({ siteTitle }) => {
 
@@ -16,16 +14,16 @@ export const Buy = ({ siteTitle }) => {
 
 	const data = useStaticQuery(graphql`
     query {
-		wallet: file(relativePath: { eq: "wallet.svg" }) {
+		wallet: file(relativePath: { eq: "buy/wallet.svg" }) {
+		    publicURL
+        }
+	  eth: file(relativePath: { eq: "buy/eth.svg" }) {
         publicURL
       }
-	  eth: file(relativePath: { eq: "eth.svg" }) {
-        publicURL
+	  uniswap: file(relativePath: { eq: "buy/uniswap.svg" }) {
+		publicURL
       }
-	  uniswap: file(relativePath: { eq: "uniswap.svg" }) {
-        publicURL
-      }
-	  fella: file(relativePath: { eq: "fella.svg" }) {
+	  fella: file(relativePath: { eq: "buy/fella.svg" }) {
         publicURL
       }
     }
