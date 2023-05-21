@@ -3,16 +3,39 @@ import { Slide, Fade } from "react-reveal";
 import { useInView } from "react-intersection-observer";
 import Typist from 'react-typist';
 import Icon from '../../icons/icon';
-import { StaticImage } from "gatsby-plugin-image"
-import WalletSvg from "../../../images/wallet.svg"
-import EthSvg from "../../../images/eth.svg"
-import UniswapSvg from "../../../images/uniswap.svg"
-import FellaSvg from "../../../images/fella.svg"
 import { Video } from "../../utils";
+import { StaticImage } from "gatsby-plugin-image";
+import { useStaticQuery, graphql } from "gatsby"
+import { LazyLoadImage } from "react-lazy-load-image-component"
+import "react-lazy-load-image-component/src/effects/blur.css"
 
 export const Buy = ({ siteTitle }) => {
+
 	const { ref, inView } = useInView({ threshold: 0 });
 	const [isTypingComplete, setIsTypingComplete] = useState(false);
+
+	const data = useStaticQuery(graphql`
+    query {
+		wallet: file(relativePath: { eq: "wallet.svg" }) {
+        publicURL
+      }
+	  eth: file(relativePath: { eq: "eth.svg" }) {
+        publicURL
+      }
+	  uniswap: file(relativePath: { eq: "uniswap.svg" }) {
+        publicURL
+      }
+	  fella: file(relativePath: { eq: "fella.svg" }) {
+        publicURL
+      }
+    }
+  `)
+	const wallet = data.wallet.publicURL;
+	const eth = data.eth.publicURL;
+	const uniswap = data.uniswap.publicURL;
+	const fella = data.fella.publicURL;
+
+
 
 	const handleTypingDone = () => {
 		setIsTypingComplete(true);
@@ -29,7 +52,7 @@ export const Buy = ({ siteTitle }) => {
 								<Slide left duration={1500}>
 									<div>
 										{/*<Icon name="wallet" fould="buy" width={149} alt="wallet" />*/}
-										<img src={WalletSvg} width={149} />
+										<LazyLoadImage src={wallet} alt="wallet" width={149} effect="blur" />
 									</div>
 								</Slide>
 							</div>
@@ -51,7 +74,8 @@ export const Buy = ({ siteTitle }) => {
 								<Slide left duration={1500}>
 									<div>
 										{/*<Icon name="eth" fould="buy" width={149} alt="eth" />*/}
-										<img src={EthSvg} width={149} />
+
+										<LazyLoadImage src={eth} alt="eth" width={149} effect="blur" />
 									</div>
 								</Slide>
 							</div>
@@ -74,7 +98,7 @@ export const Buy = ({ siteTitle }) => {
 								<Slide left duration={1500}>
 									<div>
 										{/*<Icon name="uniswap" fould="buy" width={149} alt="uniswap" />*/}
-								        <img src={UniswapSvg} width={149} />
+										<LazyLoadImage src={uniswap} alt="uniswap" width={149} effect="blur" />
 									</div>
 								</Slide>
 							</div>
@@ -97,7 +121,7 @@ export const Buy = ({ siteTitle }) => {
 								<Slide left duration={1500}>
 									<div>
 										{/*<Icon name="fella" fould="buy" width={149} alt="fella" />*/}
-										<img src={WalletSvg} width={149} />
+										<LazyLoadImage src={fella} alt="fella" width={149} effect="blur" />
 									</div>
 								</Slide>
 							</div>
