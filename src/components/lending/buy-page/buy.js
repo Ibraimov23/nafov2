@@ -14,8 +14,11 @@ export const Buy = ({ siteTitle }) => {
 
 	const data = useStaticQuery(graphql`
     query {
-		wallet: file(relativePath: { eq: "buy/wallet.svg" }) {
-		    publicURL
+		wallet: file(relativePath: { eq: "buy/wallet.png" }) {
+		    childImageSharp {
+				gatsbyImageData(layout: FIXED, width: 149, placeholder: TRACED_SVG)
+			  }
+			  publicURL
         }
 	  eth: file(relativePath: { eq: "buy/eth.svg" }) {
         publicURL
