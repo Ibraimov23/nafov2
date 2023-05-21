@@ -46,7 +46,7 @@ export const Buy = ({ siteTitle }) => {
 			<div class="buy-page__container _container" ref={ref}>
 				<h1 class="buy-page__header header-text" data-aos="fade-up">HOW TO BUY</h1>
 				<div class="buy-page__cards">
-					<div class="buy-page__card" data-aos="fade-up">
+					<div class="buy-page__card">
 						<div class="card__row">
 							<div class="row__img" id="off">
 								<Slide left duration={1500}>
@@ -92,7 +92,7 @@ export const Buy = ({ siteTitle }) => {
 							</Fade>
 						</div>
 					</div>
-					<div class="buy-page__card" data-aos="fade-up">
+					<div class="buy-page__card">
 						<div class="card__row">
 							<div class="row__img" id="off">
 								<Slide left duration={1500}>
@@ -115,7 +115,7 @@ export const Buy = ({ siteTitle }) => {
 							</Fade>
 						</div>
 					</div>
-					<div class="buy-page__card" data-aos="fade-up">
+					<div class="buy-page__card">
 						<div class="card__row">
 							<div class="row__img" id="off">
 								<Slide left duration={1500}>
