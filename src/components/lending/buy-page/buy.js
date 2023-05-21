@@ -15,7 +15,7 @@ export const Buy = ({ siteTitle }) => {
 
 	return (
 		<div class="buy-page" id="buy">
-			<div class="buy-page__container _container" ref={ref}>
+			<div class="buy-page__container _container" /*ref={ref}*/>
 				<h1 class="buy-page__header header-text" data-aos="fade-up">HOW TO BUY</h1>
 				<div class="buy-page__cards">
 					<div class="buy-page__card" data-aos="fade-up">
@@ -27,15 +27,17 @@ export const Buy = ({ siteTitle }) => {
 									</div>
 								</Slide>
 							</div>
-							<div class="row__description">
-								<p class="row__description_header"><Fade duration={2000}>Create a Wallet</Fade></p>
-								<p class="row__description_desc"> {/*inView && !isTypingComplete ? (
+							<Fade duration={2000}>
+								<div class="row__description">
+									<p class="row__description_header">Create a Wallet</p>
+									<p class="row__description_desc"> {/*inView && !isTypingComplete ? (
 									<Typist avgTypingDelay={15} onTypingDone={handleTypingDone}
 										startDelay={100} cursor={{ show: false }}>If you are using a desktop, we suggest visiting <a href="https://metamask.io/" class="_line"> Metamask.io</a> and downloading their browser extension. For mobile, install any Ethereum wallet that can be connected to Uniswap.
 								</Typist>) : (<>If you are using a desktop, we suggest visiting <a href="https://metamask.io/" class="_line"> Metamask.io</a> and downloading their browser extension. For mobile, install any Ethereum wallet that can be connected to Uniswap</>)*/}
-								If you are using a desktop, we suggest visiting <a href="https://metamask.io/" class="_line"> Metamask.io</a> and downloading their browser extension. For mobile, install any Ethereum wallet that can be connected to Uniswap
-								</p>
-							</div>
+										If you are using a desktop, we suggest visiting <a href="https://metamask.io/" class="_line"> Metamask.io</a> and downloading their browser extension. For mobile, install any Ethereum wallet that can be connected to Uniswap
+									</p>
+								</div>
+							</Fade>
 						</div>
 					</div>
 					<div class="buy-page__card">
@@ -55,7 +57,7 @@ export const Buy = ({ siteTitle }) => {
 											startDelay={100} cursor={{ show: false }}>
 											You will need ETH to pay for transaction fees when buying $NAFO. You can buy some ETH directly in Metamask or just get it transferred to your wallet from an exchange or your fellas.
 									</Typist>) : (<>You will need ETH to pay for transaction fees when buying $NAFO. You can buy some ETH directly in Metamask or just get it transferred to your wallet from an exchange or your fellas.</>)*/}
-									You will need ETH to pay for transaction fees when buying $NAFO. You can buy some ETH directly in Metamask or just get it transferred to your wallet from an exchange or your fellas.
+										You will need ETH to pay for transaction fees when buying $NAFO. You can buy some ETH directly in Metamask or just get it transferred to your wallet from an exchange or your fellas.
 									</p>
 								</div>
 							</Fade>
@@ -78,7 +80,7 @@ export const Buy = ({ siteTitle }) => {
 											startDelay={100} cursor={{ show: false }}>
 											Open the <a href="https://app.uniswap.org/" class="_line">Uniswap app</a>, connect your wallet, and paste the $NAFO smart contract address. Or simply visit <a href="https://app.uniswap.org/#/swap?outputCurrency=0xaf59f6613920d98ef64a133b21b28495a63e808f" class="_line">this link</a> for a pre-configured setup with $NAFO as received currency.
 									</Typist>) : (<>Open the <a href="https://app.uniswap.org/" class="_line">Uniswap app</a>, connect your wallet, and paste the $NAFO smart contract address. Or simply visit <a href="https://app.uniswap.org/#/swap?outputCurrency=0xaf59f6613920d98ef64a133b21b28495a63e808f" class="_line">this link</a> for a pre-configured setup with $NAFO as received currency.</>)*/}
-									Open the <a href="https://app.uniswap.org/" class="_line">Uniswap app</a>, connect your wallet, and paste the $NAFO smart contract address. Or simply visit <a href="https://app.uniswap.org/#/swap?outputCurrency=0xaf59f6613920d98ef64a133b21b28495a63e808f" class="_line">this link</a> for a pre-configured setup with $NAFO as received currency.
+										Open the <a href="https://app.uniswap.org/" class="_line">Uniswap app</a>, connect your wallet, and paste the $NAFO smart contract address. Or simply visit <a href="https://app.uniswap.org/#/swap?outputCurrency=0xaf59f6613920d98ef64a133b21b28495a63e808f" class="_line">this link</a> for a pre-configured setup with $NAFO as received currency.
 									</p>
 								</div>
 							</Fade>
