@@ -6,7 +6,8 @@ import PropTypes from 'prop-types'
 
 const Icon = ({ name, fould, ...props }) => {
   //const IconComponent = iconContext(`./${name}.svg`).default;
-  const IconComponent = require(`../../images/${fould}/icons/${name}.svg`).default
+  /*const IconComponent = require(`../../images/${fould}/icons/${name}.svg`).default*/
+  const IconComponent = require(`../../images/${name}.svg`).default
 
   return <IconComponent {...props} />
 }

@@ -4,6 +4,10 @@ import { useInView } from "react-intersection-observer";
 import Typist from 'react-typist';
 import Icon from '../../icons/icon';
 import { StaticImage } from "gatsby-plugin-image"
+import WalletSvg from "../../../images/wallet.svg"
+import EthSvg from "../../../images/eth.svg"
+import UniswapSvg from "../../../images/uniswap.svg"
+import FellaSvg from "../../../images/fella.svg"
 import { Video } from "../../utils";
 
 export const Buy = ({ siteTitle }) => {
@@ -25,7 +29,7 @@ export const Buy = ({ siteTitle }) => {
 								<Slide left duration={1500}>
 									<div>
 										{/*<Icon name="wallet" fould="buy" width={149} alt="wallet" />*/}
-										<StaticImage src="../../../images/buy/icons/wallet.svg" alt="wallet" width={402} placeholder="blurred" />
+										<img src={WalletSvg} width={149} />
 									</div>
 								</Slide>
 							</div>
@@ -47,7 +51,7 @@ export const Buy = ({ siteTitle }) => {
 								<Slide left duration={1500}>
 									<div>
 										{/*<Icon name="eth" fould="buy" width={149} alt="eth" />*/}
-										<StaticImage src="../../../images/buy/icons/eth.svg" alt="eth" width={149} placeholder="blurred" />
+										<img src={EthSvg} width={149} />
 									</div>
 								</Slide>
 							</div>
@@ -70,7 +74,7 @@ export const Buy = ({ siteTitle }) => {
 								<Slide left duration={1500}>
 									<div>
 										{/*<Icon name="uniswap" fould="buy" width={149} alt="uniswap" />*/}
-										<StaticImage src="../../../images/buy/icons/uniswap.svg" alt="uniswap" width={149} placeholder="blurred" />
+								        <img src={UniswapSvg} width={149} />
 									</div>
 								</Slide>
 							</div>
@@ -93,7 +97,7 @@ export const Buy = ({ siteTitle }) => {
 								<Slide left duration={1500}>
 									<div>
 										{/*<Icon name="fella" fould="buy" width={149} alt="fella" />*/}
-										<StaticImage src="../../../images/buy/icons/fella.svg" alt="fella" width={149} placeholder="blurred" />
+										<img src={WalletSvg} width={149} />
 									</div>
 								</Slide>
 							</div>

@@ -20,7 +20,7 @@ export const Home = ({ siteTitle }) => {
 				<div class="home-page__soc-medias">
 					<ul class="soc-medias__links" >
 						<Fade duration={2500}>
-							<li class="soc-medias__link">
+							{/*<li class="soc-medias__link">
 								<a href="#"><Icon name="tw" fould="home" width={34} height={34} /></a>
 							</li>
 							<li class="soc-medias__link">
@@ -37,7 +37,7 @@ export const Home = ({ siteTitle }) => {
 							</li>
 							<li class="soc-medias__link">
 								<a href="#"><Icon name="scan" fould="home" width={34} height={34} /></a>
-							</li>
+	</li>*/}
 						</ Fade>
 					</ul>
 				</div>

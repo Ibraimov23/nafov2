@@ -15,7 +15,7 @@ export const Contact = ({ siteTitle }) => {
 						<h1 class="contact-page__header header-text" data-aos="fade-up">CONTACT</h1>
 						<ul class="contact-page__socials" data-aos="fade-up">
 							<Fade duration={2500}>
-								<li>
+								{/*<li>
 									<a href="https://t.me/nafovip"><Icon name="tg" fould="contact" width={52} height={52} /></a>
 								</li>
 								<li>
@@ -23,7 +23,7 @@ export const Contact = ({ siteTitle }) => {
 								</li>
 								<li>
 									<a href="https://discord.gg/4EkR6ENvaE"><Icon name="disc" fould="contact" width={61} height={61} /></a>
-								</li>
+	</li>*/}
 							</Fade>
 						</ul>
 					</div>
