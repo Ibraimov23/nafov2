@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Slide, Fade } from "react-reveal";
-import Typist from 'react-typist';
 import { useInView } from "react-intersection-observer";
+import Typist from 'react-typist';
 import Icon from '../../icons/icon';
+import { StaticImage } from "gatsby-plugin-image"
 import { Video } from "../../utils";
 
 export const Buy = ({ siteTitle }) => {
