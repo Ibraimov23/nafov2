@@ -25,7 +25,7 @@ export const Buy = ({ siteTitle }) => {
 								<Slide left duration={1500}>
 									<div>
 										{/*<Icon name="wallet" fould="buy" width={149} alt="wallet" />*/}
-										<StaticImage src="../../../images/buy/wallet.svg" alt="wallet" width={402} placeholder="blurred" />
+										<StaticImage src="../../../images/buy/icons/wallet.svg" alt="wallet" width={402} placeholder="blurred" />
 									</div>
 								</Slide>
 							</div>
@@ -47,7 +47,7 @@ export const Buy = ({ siteTitle }) => {
 								<Slide left duration={1500}>
 									<div>
 										{/*<Icon name="eth" fould="buy" width={149} alt="eth" />*/}
-										<StaticImage src="../../../images/buy/eth.svg" alt="eth" width={149} placeholder="blurred" />
+										<StaticImage src="../../../images/buy/icons/eth.svg" alt="eth" width={149} placeholder="blurred" />
 									</div>
 								</Slide>
 							</div>
@@ -70,7 +70,7 @@ export const Buy = ({ siteTitle }) => {
 								<Slide left duration={1500}>
 									<div>
 										{/*<Icon name="uniswap" fould="buy" width={149} alt="uniswap" />*/}
-										<StaticImage src="../../../images/buy/uniswap.svg" alt="uniswap" width={149} placeholder="blurred" />
+										<StaticImage src="../../../images/buy/icons/uniswap.svg" alt="uniswap" width={149} placeholder="blurred" />
 									</div>
 								</Slide>
 							</div>
@@ -93,7 +93,7 @@ export const Buy = ({ siteTitle }) => {
 								<Slide left duration={1500}>
 									<div>
 										{/*<Icon name="fella" fould="buy" width={149} alt="fella" />*/}
-										<StaticImage src="../../../images/buy/fella.svg" alt="fella" width={149} placeholder="blurred" />
+										<StaticImage src="../../../images/buy/icons/fella.svg" alt="fella" width={149} placeholder="blurred" />
 									</div>
 								</Slide>
 							</div>
