@@ -12,7 +12,7 @@ export const Tokenomic = ({ siteTitle }) => {
 						<Slide left duration={2000}><StaticImage src="../../../images/tokenomic/info.svg" alt="info" placeholder="blurred" quality={100} /></Slide>
 					</div>
 					<div class="row__description">
-						<h1 class="tokenomic-page__header header-text">TOKENOMICS</h1>
+						<h1 class="tokenomic-page__header header-text" data-aos="fade-up">TOKENOMICS</h1>
 						<Slide right duration={2000}>
 							<div>
 								<h5 class="row__description_head">Token supply - 199 124 800 000 000</h5>

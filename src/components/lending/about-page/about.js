@@ -11,7 +11,7 @@ export const About = ({ siteTitle}) => {
 							<Slide left duration={2000}><StaticImage src="../../../images/about/fella.svg" alt="fella" height={500} width={402} layout="fixed" placeholder="blurred" quality={100} className="row__image_img" /></Slide>
 						</div>
 						<div class="row__descriptions">
-							<h1 class="about-page__header header-text">OUR VALUES</h1>
+							<h1 class="about-page__header header-text" data-aos="fade-up">OUR VALUES</h1>
 							<div class="about-page__description">
 								<p class="description_text"><Slide right duration={2000}>The $NAFO token has been created to raise money for Ukrainian Armed Forces and civilians affected by the russian aggression. We are a team of Ukrainian patriots who want to free their homeland and make Ukraine peaceful and prosperous again.</Slide></p>
 								<p class="description_text"><Slide right duration={2000}>Our goal is to maximize trading volumes of the $NAFO token, sending 4% from every transaction to the needs of Ukrainian people. The tax transfer is integrated into our smart contract and can be easily tracked on the blockchain explorer. The project team, nor anyone else, does not take any additional fees from trading $NAFO.</Slide></p>

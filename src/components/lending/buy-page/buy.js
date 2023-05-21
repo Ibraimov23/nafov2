@@ -42,7 +42,7 @@ export const Buy = ({ siteTitle }) => {
 	return (
 		<div class="buy-page" id="buy">
 			<div class="buy-page__container _container" ref={ref}>
-				<h1 class="buy-page__header header-text">HOW TO BUY</h1>
+				<h1 class="buy-page__header header-text" data-aos="fade-up">HOW TO BUY</h1>
 				<div class="buy-page__cards">
 					<div class="buy-page__card">
 						<div class="card__row">

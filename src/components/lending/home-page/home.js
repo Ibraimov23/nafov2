@@ -7,7 +7,7 @@ export const Home = ({ siteTitle }) => {
 		<div class="home-page" id="home">
 			<div class="home-page__container _container">
 				<div class="home-page__descriptions" id="off">
-					<h1 class="home-page__header header-text">$NAFO</h1>
+					<h1 class="home-page__header header-text" data-aos="fade-up">$NAFO</h1>
 					<Slide left duration={2000}>
 						<div>
 							<p class="home-page__description">
