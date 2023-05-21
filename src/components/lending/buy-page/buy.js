@@ -14,16 +14,16 @@ export const Buy = ({ siteTitle }) => {
 
 	const data = useStaticQuery(graphql`
     query {
-	  wallet: file(relativePath: { eq: "buy/wallet.png" }) {
+	  wallet: file(relativePath: { eq: "buy/wallet.svg" }) {
 		publicURL
       }
-	  eth: file(relativePath: { eq: "buy/eth.png" }) {
+	  eth: file(relativePath: { eq: "buy/eth.svg" }) {
         publicURL
       }
-	  uniswap: file(relativePath: { eq: "buy/uniswap.png" }) {
+	  uniswap: file(relativePath: { eq: "buy/uniswap.svg" }) {
 		publicURL
       }
-	  fella: file(relativePath: { eq: "buy/fella.png" }) {
+	  fella: file(relativePath: { eq: "buy/fella.svg" }) {
         publicURL
       }
     }
