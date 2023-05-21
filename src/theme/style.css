@@ -129,6 +129,7 @@ body {
   position: relative;
   padding-bottom: 28px;
   height: 90vh;
+  border-bottom: 1px solid #575757;
 }
 
 .home-page::before {
