@@ -44,14 +44,13 @@ export const Buy = ({ siteTitle }) => {
 	return (
 		<div class="buy-page" id="buy">
 			<div class="buy-page__container _container" ref={ref}>
-				<h1 class="buy-page__header header-text" data-aos="fade-up">HOW TO BUY</h1>
+				<h1 class="buy-page__header header-text">HOW TO BUY</h1>
 				<div class="buy-page__cards">
 					<div class="buy-page__card">
 						<div class="card__row">
 							<div class="row__img" id="off">
 								<Slide left duration={1500}>
 									<div>
-										{/*<Icon name="wallet" fould="buy" width={149} alt="wallet" />*/}
 										<LazyLoadImage src={wallet} alt="wallet" width={149} effect="blur" />
 									</div>
 								</Slide>
@@ -73,8 +72,6 @@ export const Buy = ({ siteTitle }) => {
 							<div class="row__img" id="off">
 								<Slide left duration={1500}>
 									<div>
-										{/*<Icon name="eth" fould="buy" width={149} alt="eth" />*/}
-
 										<LazyLoadImage src={eth} alt="eth" width={149} effect="blur" />
 									</div>
 								</Slide>
@@ -97,7 +94,6 @@ export const Buy = ({ siteTitle }) => {
 							<div class="row__img" id="off">
 								<Slide left duration={1500}>
 									<div>
-										{/*<Icon name="uniswap" fould="buy" width={149} alt="uniswap" />*/}
 										<LazyLoadImage src={uniswap} alt="uniswap" width={149} effect="blur" />
 									</div>
 								</Slide>
@@ -120,7 +116,6 @@ export const Buy = ({ siteTitle }) => {
 							<div class="row__img" id="off">
 								<Slide left duration={1500}>
 									<div>
-										{/*<Icon name="fella" fould="buy" width={149} alt="fella" />*/}
 										<LazyLoadImage src={fella} alt="fella" width={149} effect="blur" />
 									</div>
 								</Slide>

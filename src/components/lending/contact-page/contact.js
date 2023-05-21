@@ -12,8 +12,8 @@ export const Contact = ({ siteTitle }) => {
 						<Slide left duration={2000}><StaticImage src="../../../images/contact/meme.png" alt="meme" layout="fixed" placeholder="blurred" /></Slide>
 					</div>
 					<div class="row__contents">
-						<h1 class="contact-page__header header-text" data-aos="fade-up">CONTACT</h1>
-						<ul class="contact-page__socials" data-aos="fade-up">
+						<h1 class="contact-page__header header-text">CONTACT</h1>
+						<ul class="contact-page__socials">
 							<Fade duration={2500}>
 								<li>
 									<a href="https://t.me/nafovip"><Icon name="tg" fould="contact" width={52} height={52} /></a>
