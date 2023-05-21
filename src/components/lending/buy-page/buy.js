@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 import Icon from '../../icons/icon';
 import { Video } from "../../utils";
 
-export const Buy = ({ siteTitle, isMobile }) => {
+export const Buy = ({ siteTitle }) => {
 	const { ref, inView } = useInView({ threshold: 0 });
 	const [isTypingComplete, setIsTypingComplete] = useState(false);
 
@@ -20,13 +20,13 @@ export const Buy = ({ siteTitle, isMobile }) => {
 				<div class="buy-page__cards">
 					<div class="buy-page__card" data-aos="fade-up">
 						<div class="card__row">
-							{isMobile ? (<div class="row__img">
-								<Icon name="wallet" fould="buy" width={149} alt="wallet" />
-							</div>) : (<Slide left duration={2000} class="card__row">
-								<div class="row__img">
-									<Icon name="wallet" fould="buy" width={149} alt="wallet" />
-								</div>
-							</Slide>)}
+							<div class="row__img" id="off">
+								<Slide left duration={1500}>
+									<div>
+										<Icon name="wallet" fould="buy" width={149} alt="wallet" />
+									</div>
+								</Slide>
+							</div>
 							<div class="row__description">
 								<p class="row__description_header"><Fade duration={2000}>Create a Wallet</Fade></p>
 								<p class="row__description_desc"> {inView && !isTypingComplete ? (
@@ -39,13 +39,13 @@ export const Buy = ({ siteTitle, isMobile }) => {
 					</div>
 					<div class="buy-page__card">
 						<div class="card__row">
-							{isMobile ? (<div class="row__img">
-								<Icon name="eth" fould="buy" width={149} alt="eth" />
-							</div>) : (<Slide left duration={1500} class="card__row">
-								<div class="row__img">
-									<Icon name="eth" fould="buy" width={149} alt="eth" />
-								</div>
-							</Slide>)}
+							<div class="row__img" id="off">
+								<Slide left duration={1500}>
+									<div>
+										<Icon name="eth" fould="buy" width={149} alt="eth" />
+									</div>
+								</Slide>
+							</div>
 							<Fade duration={2000}>
 								<div class="row__description">
 									<p class="row__description_header">Get Some ETH</p>
@@ -61,13 +61,13 @@ export const Buy = ({ siteTitle, isMobile }) => {
 					</div>
 					<div class="buy-page__card" data-aos="fade-up">
 						<div class="card__row">
-							{isMobile ? (<div class="row__img">
-								<Icon name="uniswap" fould="buy" width={149} alt="uniswap" />
-							</div>) : (<Slide left duration={1500} class="card__row">
-								<div class="row__img">
-									<Icon name="uniswap" fould="buy" width={149} alt="uniswap" />
-								</div>
-							</Slide>)}
+							<div class="row__img" id="off">
+								<Slide left duration={1500}>
+									<div>
+										<Icon name="uniswap" fould="buy" width={149} alt="uniswap" />
+									</div>
+								</Slide>
+							</div>
 							<Fade duration={2000}>
 								<div class="row__description">
 									<p class="row__description_header">Go to Uniswap</p>
@@ -83,13 +83,13 @@ export const Buy = ({ siteTitle, isMobile }) => {
 					</div>
 					<div class="buy-page__card" data-aos="fade-up">
 						<div class="card__row">
-							{isMobile ? (<div class="row__img">
-								<Icon name="fella" fould="buy" width={149} alt="fella" />
-							</div>) : (<Slide left duration={1500} class="card__row">
-								<div class="row__img">
-									<Icon name="fella" fould="buy" width={149} alt="fella" />
-								</div>
-							</Slide>)}
+							<div class="row__img" id="off">
+								<Slide left duration={1500}>
+									<div>
+										<Icon name="fella" fould="buy" width={149} alt="fella" />
+									</div>
+								</Slide>
+							</div>
 							<Fade duration={2000}>
 								<div class="row__description">
 									<p class="row__description_header">Become a fella</p>
