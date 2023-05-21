@@ -9,7 +9,7 @@ export const Contact = ({ siteTitle }) => {
 			<div class="contact-page__container _container">
 				<div class="contact-page__row">
 					<div class="row__image" id="off">
-						<Slide left duration={2000}><StaticImage src="../../../images/contact/meme.png" alt="meme" layout="fixed" placeholder="blurred" /></Slide>
+						<Slide left duration={2000}><StaticImage src="../../../images/contact/meme.png" alt="meme" layout="fixed" placeholder="blurred" quality={100} /></Slide>
 					</div>
 					<div class="row__contents">
 						<h1 class="contact-page__header header-text">CONTACT</h1>

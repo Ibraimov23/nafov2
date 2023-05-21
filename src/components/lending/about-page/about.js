@@ -8,7 +8,7 @@ export const About = ({ siteTitle}) => {
 			<div class="about-page__container _container">
 				<div class="about-page__row" id="off">
 						<div class="row__image">
-							<Slide left duration={2000}><StaticImage src="../../../images/about/fella.svg" alt="fella" height={500} width={402} layout="fixed" placeholder="blurred" className="row__image_img" /></Slide>
+							<Slide left duration={2000}><StaticImage src="../../../images/about/fella.svg" alt="fella" height={500} width={402} layout="fixed" placeholder="blurred" quality={100} className="row__image_img" /></Slide>
 						</div>
 						<div class="row__descriptions">
 							<h1 class="about-page__header header-text">OUR VALUES</h1>

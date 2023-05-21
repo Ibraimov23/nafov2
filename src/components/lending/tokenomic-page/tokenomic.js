@@ -9,7 +9,7 @@ export const Tokenomic = ({ siteTitle }) => {
 			<div class="tokenomic-page__container _container" id="tokenomic">
 				<div class="tokenomic-page__row" id="off">
 					<div class="row__image">
-						<Slide left duration={2000}><StaticImage src="../../../images/tokenomic/info.svg" alt="info" placeholder="blurred" /></Slide>
+						<Slide left duration={2000}><StaticImage src="../../../images/tokenomic/info.svg" alt="info" placeholder="blurred" quality={100} /></Slide>
 					</div>
 					<div class="row__description">
 						<h1 class="tokenomic-page__header header-text">TOKENOMICS</h1>
