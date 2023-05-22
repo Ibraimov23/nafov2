@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => {
 		<header className="header">
 			<div className="_container" id="off">
 				<Slide up duration={2000}>
-					<div classNameName="header__container">
+					<div className="header__container">
 						<a className="header__logo" href="#"><img src={mylogo} alt="logo" className="logo__image" /></a>
 						<nav className="header__menu">
 							<ul className="menu__items">
