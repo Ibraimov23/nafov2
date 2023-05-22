@@ -445,9 +445,6 @@ body {
   font-size: 1rem;
   padding-top: 15px;
 }
-.error-page__smiley {
-  padding-top: 50px;
-}
 .error-page__smiley .text {
   font-size: 65px;
   font-weight: 600;
